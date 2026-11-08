@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CreateSites — Sua ideia. Nosso desenvolvimento.</title>
+  <meta name="description" content="CreateSites: equipe de desenvolvimento web que cria sites, lojas virtuais, landing pages e soluções digitais personalizadas. Solicite seu orçamento.">
+  <meta name="theme-color" content="#050914">
+  <meta property="og:title" content="CreateSites — Sua ideia. Nosso desenvolvimento.">
+  <meta property="og:description" content="Sites, lojas virtuais, landing pages e soluções digitais personalizadas, com design moderno e foco em resultado.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- ===================== MENU ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Menu principal">
+      <a href="#inicio" class="brand" aria-label="CreateSites — início">
+        <img src="assets/img/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">Create<b>Sites</b></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre nós</a></li>
+        <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li class="nav-cta-mobile"><a href="#contato" class="btn btn-primary">Solicitar orçamento</a></li>
+      </ul>
+
+      <a href="#contato" class="btn btn-primary nav-cta">Solicitar orçamento</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== INÍCIO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow reveal"><i class="dot"></i> Equipe de desenvolvimento digital</span>
+          <h1 class="reveal">Sua ideia.<br><span class="gradient-text">Nosso desenvolvimento.</span></h1>
+          <p class="lead reveal">Somos a <strong>CreateSites</strong>: uma equipe que transforma ideias em sites modernos, rápidos e profissionais, para o seu negócio ser visto, lembrado e escolhido.</p>
+          <div class="hero-actions reveal">
+            <a href="#contato" class="btn btn-primary btn-lg">Solicitar orçamento <span class="arrow">→</span></a>
+            <a href="#portfolio" class="btn btn-ghost btn-lg">Ver portfólio</a>
+          </div>
+          <ul class="hero-points reveal">
+            <li>Design sob medida</li>
+            <li>100% responsivo</li>
+            <li>Atendimento próximo</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-bar">
+              <i></i><i></i><i></i>
+              <span>createsites.html</span>
+            </div>
+            <pre class="code-body"><code id="codeTyping"></code><span class="caret"></span></pre>
+          </div>
+          <div class="float-chip chip-1"><span class="mono">&lt;/&gt;</span> HTML5</div>
+          <div class="float-chip chip-2"><span class="mono">{ }</span> CSS3</div>
+          <div class="float-chip chip-3"><span class="mono">JS</span> JavaScript</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-features reveal">
+          <div class="mini-card"><span class="mini-ico">◆</span><div><h3>Design moderno</h3><p>Visual atual e marcante</p></div></div>
+          <div class="mini-card"><span class="mini-ico">▣</span><div><h3>Responsivo</h3><p>Celular, tablet e PC</p></div></div>
+          <div class="mini-card"><span class="mini-ico">⚡</span><div><h3>Rápido</h3><p>Leve e bem organizado</p></div></div>
+          <div class="mini-card"><span class="mini-ico">✦</span><div><h3>Personalizado</h3><p>Feito para o seu projeto</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">// serviços</span>
+          <h2>O que a <span class="gradient-text">CreateSites</span> desenvolve</h2>
+          <p>Do primeiro rascunho ao site no ar: soluções pensadas para o seu objetivo, não modelos prontos.</p>
+        </header>
+
+        <div class="cards grid-3">
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+            <h3>Desenvolvimento de sites</h3>
+            <p>Sites completos, com código limpo, visual profissional e estrutura pensada para crescer junto com o seu negócio.</p>
+          </article>
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg></div>
+            <h3>Lojas virtuais</h3>
+            <p>Vitrines online com catálogo, carrinho e jornada de compra simples, para vender com mais confiança.</p>
+          </article>
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></div>
+            <h3>Landing pages</h3>
+            <p>Páginas focadas em uma ação: captar contatos, divulgar um lançamento ou transformar visitas em conversas.</p>
+          </article>
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 011-1h9a1 1 0 011 1v16M15 9h4a1 1 0 011 1v11M8 8h3M8 12h3M8 16h3M2 21h20"/></svg></div>
+            <h3>Sites institucionais</h3>
+            <p>A presença digital que a sua empresa merece: apresentação clara, serviços em destaque e contato fácil.</p>
+          </article>
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="10" rx="1.5"/><rect x="14" y="9" width="7" height="11" rx="1.5"/><path d="M7 19h5"/></svg></div>
+            <h3>Design responsivo</h3>
+            <p>Layout que se adapta a qualquer tela, com boa leitura e navegação confortável no celular, tablet e computador.</p>
+          </article>
+          <article class="card glow-card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 9.2l-5 4.4 1.5 6.6L12 16.9 6.5 20.2 8 13.6 3 9.2l6.4-.8z"/></svg></div>
+            <h3>Soluções digitais personalizadas</h3>
+            <p>Tem uma ideia diferente? Conversamos, entendemos a necessidade e desenhamos a solução sob medida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFÓLIO ===================== -->
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">// portfólio</span>
+          <h2>Projetos <span class="gradient-text">demonstrativos</span></h2>
+          <p>Modelos criados pela CreateSites para mostrar nosso estilo e nossas possibilidades. Os projetos abaixo são <strong>demonstrações</strong> e não representam clientes reais.</p>
+        </header>
+
+        <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
+
+        <p class="portfolio-note reveal">Quer ver o seu projeto aqui? <a href="#contato">Vamos conversar</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="tag reveal">// sobre nós</span>
+          <h2 class="reveal">Uma equipe digital <span class="gradient-text">em crescimento</span></h2>
+          <p class="reveal">A <strong>CreateSites</strong> nasceu da vontade de transformar ideias em presença digital de verdade. Somos uma equipe de desenvolvimento web que une criatividade, tecnologia e compromisso em cada projeto.</p>
+          <p class="reveal">Estamos em crescimento e abertos a novos projetos, parcerias e talentos que compartilhem da nossa paixão por criar experiências digitais bem feitas.</p>
+          <div class="values reveal">
+            <div class="value"><b>Criatividade</b><span>Ideias que fogem do óbvio.</span></div>
+            <div class="value"><b>Tecnologia</b><span>Código limpo e atual.</span></div>
+            <div class="value"><b>Compromisso</b><span>Cuidado do briefing à entrega.</span></div>
+          </div>
+        </div>
+
+        <aside class="about-panel reveal">
+          <div class="terminal">
+            <div class="code-bar"><i></i><i></i><i></i><span>equipe.js</span></div>
+<pre class="code-body static"><code><span class="c-k">const</span> <span class="c-v">createSites</span> = {
+  <span class="c-p">missao</span>: <span class="c-s">"Sua ideia. Nosso desenvolvimento."</span>,
+  <span class="c-p">valores</span>: [<span class="c-s">"criatividade"</span>, <span class="c-s">"tecnologia"</span>,
+            <span class="c-s">"compromisso"</span>],
+  <span class="c-p">equipe</span>: <span class="c-s">"em crescimento"</span>,
+  <span class="c-p">novosTalentos</span>: <span class="c-n">true</span>,
+  <span class="c-p">novosProjetos</span>: <span class="c-n">true</span>
+};</code></pre>
+          </div>
+          <a class="join-card" href="#contato">
+            <b>Quer fazer parte?</b>
+            <span>Estamos abertos a novos talentos e parcerias →</span>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== DIFERENCIAIS ===================== -->
+    <section class="section section-alt" id="diferenciais">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">// diferenciais</span>
+          <h2>Por que escolher a <span class="gradient-text">CreateSites</span></h2>
+          <p>Cada detalhe é pensado para que o seu site passe confiança e entregue resultado.</p>
+        </header>
+
+        <div class="cards grid-3">
+          <article class="card glow-card reveal"><span class="num">01</span><h3>Design moderno</h3><p>Visual atual, elegante e coerente com a identidade do seu negócio.</p></article>
+          <article class="card glow-card reveal"><span class="num">02</span><h3>Responsividade</h3><p>Experiência perfeita em celulares, tablets e computadores.</p></article>
+          <article class="card glow-card reveal"><span class="num">03</span><h3>Desenvolvimento personalizado</h3><p>Nada de modelo genérico: o site é construído para o seu objetivo.</p></article>
+          <article class="card glow-card reveal"><span class="num">04</span><h3>Organização</h3><p>Prazos combinados, etapas claras e código bem estruturado.</p></article>
+          <article class="card glow-card reveal"><span class="num">05</span><h3>Atendimento próximo</h3><p>Conversa direta e acompanhamento em todas as fases do projeto.</p></article>
+          <article class="card glow-card reveal"><span class="num">06</span><h3>Experiência do usuário</h3><p>Navegação intuitiva para o visitante encontrar o que precisa e entrar em contato.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESSO ===================== -->
+    <section class="section" id="processo">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">// como trabalhamos</span>
+          <h2>Da ideia ao <span class="gradient-text">site no ar</span></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal"><b>1</b><h3>Conversa</h3><p>Entendemos sua ideia, seu público e seu objetivo.</p></li>
+          <li class="step reveal"><b>2</b><h3>Proposta</h3><p>Você recebe o orçamento e o escopo combinado.</p></li>
+          <li class="step reveal"><b>3</b><h3>Design e código</h3><p>Criamos e desenvolvemos, com validação durante o caminho.</p></li>
+          <li class="step reveal"><b>4</b><h3>Entrega</h3><p>Revisão final, publicação e suporte para ajustes.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section section-alt" id="contato">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <span class="tag">// contato</span>
+          <h2>Vamos tirar a sua ideia <span class="gradient-text">do papel?</span></h2>
+          <p>Conte o que você precisa e receba um orçamento sem compromisso. Estamos prontos para novos clientes e novos projetos.</p>
+
+          <div class="cta-actions">
+            <a href="#" class="btn btn-primary btn-lg" data-whatsapp>
+              <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5zM9.3 7.8c-.4 0-.9.5-1.1 1.1-.3.9.1 2 1 3.2 1.1 1.5 2.4 2.6 3.8 3.2 1.100.5 1.900.4 2.400-.1.300-.3.500-.7.500-1 0-.2-.1-.3-.3-.4l-1.500-.7c-.2-.1-.4-.1-.5.1l-.6.7c-.1.1-.3.1-.4.1-.8-.4-1.800-1.200-2.500-2.300-.1-.2-.1-.3 0-.4l.6-.6c.1-.1.1-.3.1-.4l-.7-1.600c-.1-.2-.3-.3-.5-.3z"/></svg>
+              Chamar no WhatsApp
+            </a>
+            <a href="https://www.instagram.com/_create__sites/" class="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer" data-instagram>
+              <svg class="ig-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" class="fill"/></svg>
+              @_create__sites
+            </a>
+          </div>
+
+          <form class="quote-form" id="quoteForm" novalidate>
+            <h3>Solicite seu orçamento</h3>
+            <p class="form-hint">Preencha e enviaremos sua mensagem pelo WhatsApp, já organizada.</p>
+            <div class="form-grid">
+              <label>Seu nome
+                <input type="text" name="nome" placeholder="Como podemos te chamar?" required autocomplete="name">
+              </label>
+              <label>Tipo de projeto
+                <select name="tipo" required>
+                  <option value="">Selecione...</option>
+                  <option>Site institucional</option>
+                  <option>Loja virtual</option>
+                  <option>Landing page</option>
+                  <option>Design responsivo / redesign</option>
+                  <option>Solução personalizada</option>
+                  <option>Outro</option>
+                </select>
+              </label>
+              <label class="full">Conte sua ideia
+                <textarea name="mensagem" rows="4" placeholder="Descreva rapidamente o que você precisa..." required></textarea>
+              </label>
+            </div>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button type="submit" class="btn btn-primary btn-lg">Enviar pedido de orçamento <span class="arrow">→</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="brand"><img src="assets/img/logo.svg" alt="" width="34" height="34"><span class="brand-name">Create<b>Sites</b></span></a>
+        <p class="footer-slogan">Sua ideia. Nosso desenvolvimento.</p>
+      </div>
+      <nav class="footer-links" aria-label="Rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/_create__sites/" target="_blank" rel="noopener noreferrer" data-instagram>Instagram @_create__sites</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> CreateSites. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" data-whatsapp aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5zM9.3 7.8c-.4 0-.9.5-1.1 1.1-.3.9.1 2 1 3.2 1.1 1.5 2.4 2.6 3.8 3.2 1.100.5 1.900.4 2.400-.1.300-.3.500-.7.500-1 0-.2-.1-.3-.3-.4l-1.500-.7c-.2-.1-.4-.1-.5.1l-.6.7c-.1.1-.3.1-.4.1-.8-.4-1.800-1.200-2.500-2.300-.1-.2-.1-.3 0-.4l.6-.6c.1-.1.1-.3.1-.4l-.7-1.600c-.1-.2-.3-.3-.5-.3z"/></svg>
+  </a>
+
+  <!-- Janela de detalhes do projeto -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close aria-label="Fechar">×</button>
+      <img id="modalImg" src="" alt="" class="modal-img">
+      <div class="modal-info">
+        <span class="badge" id="modalBadge">Demonstração</span>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-cat" id="modalCat"></p>
+        <p id="modalDesc"></p>
+        <div class="tags" id="modalTags"></div>
+        <a href="#contato" class="btn btn-primary" data-close>Quero um projeto assim</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
