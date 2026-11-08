@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#087DF5"/><stop offset="1" stop-color="#19A5FF"/></linearGradient>
+<radialGradient id="r" cx=".75" cy=".2" r=".7"><stop offset="0" stop-color="#087DF5" stop-opacity=".55"/><stop offset="1" stop-color="#050914" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="#050914"/><rect width="1200" height="630" fill="url(#r)"/>
+<g transform="translate(90 190) scale(2.2)"><path d="M25 21 L14 32 L25 43" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 21 L50 32 L39 43" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 18 L29 46" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></g>
+<text x="270" y="270" font-family="Arial,sans-serif" font-size="92" font-weight="700" fill="#fff">Create<tspan fill="#19A5FF">Sites</tspan></text>
+<text x="270" y="345" font-family="Arial,sans-serif" font-size="40" fill="#9aa6bd">Sua ideia. Nosso desenvolvimento.</text>
+<rect x="90" y="470" width="360" height="6" rx="3" fill="url(#g)"/>
+</svg>
